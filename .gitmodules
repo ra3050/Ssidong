@@ -1,0 +1,3 @@
+[submodule "ssidong_front"]
+	path = ssidong_front
+	url = https://github.com/ra3050/ssidong_front.git

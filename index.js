@@ -8,7 +8,7 @@ import { auth_Connect } from "./server/util/dbConnect.js";
 
 const PORT = 3050;  
 const __dirname = path.resolve();       //commonjs를 사용하면 기본적으로 __dirname이 포함되어 있지만 ESM에서는 기본적으로 포함되어있지 않다.
-const BUILDDIR = "/front/build/";       // "../front/build/"
+const BUILDDIR = "/ssidong_front/build/";       // "../front/build/"
 
 const app = express();
 const logger = morgan('dev');
@@ -16,7 +16,7 @@ const logger = morgan('dev');
 app.use(express.json());            // 유저가 보낸 array/object 데이터를 출력하기 위해 사용
 app.use(cors());                    // react와 통신을 원활하게 하기위한 미들웨어
 app.use(logger);                    //서버 접속상태 실시간 확인 라이브러리                               
-app.use(express.static(path.join(__dirname, "../front/build")));     //서버에 접속하는 사람들에게 입력한 path추소에서 html파일을 전송함  
+app.use(express.static(path.join(__dirname, "/ssidong_front/build")));     //서버에 접속하는 사람들에게 입력한 path추소에서 html파일을 전송함  
 
 // 포트폴리오 정보를 가져옵니다.
 app.get('/api/requestPortfolio', (req, res) => {

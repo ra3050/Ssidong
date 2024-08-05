@@ -1,12 +1,12 @@
-import "dotenv/config"; 
+import "dotenv/config";
 import express, { response } from "express";
-import path from 'path';    
+import path from 'path';
 import cors from "cors";
 import morgan from "morgan";
 import smtpTransport from "./server/config/email.js";
 import { auth_Connect } from "./server/util/dbConnect.js";
 
-const PORT = 3050;  
+const PORT = 3050;
 const __dirname = path.resolve();       //commonjs를 사용하면 기본적으로 __dirname이 포함되어 있지만 ESM에서는 기본적으로 포함되어있지 않다.
 const BUILDDIR = "/ssidong_front/build/";       // "../front/build/"
 

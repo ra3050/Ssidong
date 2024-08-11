@@ -18,10 +18,14 @@
 
 <div><h1>실행방법</h1></div>
 <div>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
+  <p> **위 파일은 서버 코드입니다**<br> **서브모듈 파일은 프론트 코드입니다**<br>**제공되는 데이터는 실제 데이터가 아닌 테스트용 데이터입니다**</p>
+    
+  <p>1. ./server/server.mjs에 18번 28번 라인에 경로를 프론트 파일의 /build 디렉토리 위치로 변경</p>
+  <p>2. ssidong_dump.sql파일 mariaDB 업로드</p>
+  <p>3. ./server/config/db.js에 host ip 변경</p>
+  <p>4. 프론트 ./src/controller/Axios.config.js baseURL을 사용할 주소값으로 변경</p>
+  <p>5. 프론트 npm run build</p>
+  <p>6. 서버 npm run dev:server </p>
   <p></p>
 </div>
 <br>

@@ -33,4 +33,4 @@
 
 <div><h1>실행화면</h1></div>
 
-<img src="https://github.com/user-attachments/assets/41758717-4a84-4f79-8e0e-36429e103737"/>
+<img src="https://github.com/user-attachments/assets/2b71d887-295d-427a-9003-3d95e78f3c98"/>
